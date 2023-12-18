@@ -51,10 +51,15 @@ jobs:
           git config --global user.name "$(git log -n 1 --pretty=format:%an)"
           git config --global user.email "$(git log -n 1 --pretty=format:%ae)"
 
-          # Add, commit, and push changes
-          git add LikeMindsFeed.podspec LikeMindsFeed.xcframework
-          git commit -m "Update artifacts from GitHub Actions"
-          git push origin master
+          # Check if there are changes
+          if [[ -n $(git status -s) ]]; then
+            # Add, commit, and push changes
+            git add LikeMindsFeed.podspec LikeMindsFeed.xcframework
+            git commit -m "Update artifacts from GitHub Actions"
+            git push origin master
+          else
+            echo "No changes to commit."
+          fi
         env:
           PAT: ${{ secrets.PAT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
