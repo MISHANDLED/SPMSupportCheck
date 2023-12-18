@@ -68,8 +68,14 @@ jobs:
         run: |
           # Push a Git tag with the new version
           export current_version=$(grep 'spec.version' LikeMindsFeed.podspec | awk -F '"' '/spec.version/{print $2}' | tr -d '\n' | sed 's/[^0-9.]//g; s/\..$//')
-          git tag -a "v$current_version" -m "Version $current_version"
-          git push origin "v$current_version"
+          
+          # Check if the tag already exists
+          if git rev-parse "v$current_version" >/dev/null 2>&1; then
+            echo "Tag v$current_version already exists. Skipping tag creation."
+          else
+            git tag -a "v$current_version" -m "Version $current_version"
+            git push origin "v$current_version"
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
