@@ -42,6 +42,8 @@ jobs:
             $ARTIFACT_URL
       
           unzip -qo '*.zip'
+          
+          rm -f artifact_info.json run_info.json xcframework-build.zip
 
       - name: Push artifacts to master
         run: |
