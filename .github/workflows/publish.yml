@@ -81,6 +81,8 @@ jobs:
 
       - name: Deploy to cocoapods
         run: pod trunk push LikeMindsFeed.podspec --verbose
+        env:
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
   
   create-github-release:
     name: Create GitHub Release
