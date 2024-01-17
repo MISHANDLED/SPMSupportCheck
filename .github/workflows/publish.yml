@@ -20,6 +20,8 @@ jobs:
 
       - name: Download and unzip artifacts
         run: |
+          sleep 10
+          
           # Get the latest workflow run
           curl -s -H "Accept: application/vnd.github.v3+json" \
             -H "Authorization: Bearer ${{ secrets.PAT }}" \
