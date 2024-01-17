@@ -43,6 +43,7 @@ jobs:
       
           unzip -qo '*.zip'
           
+          # Delete artifact files after unzipping
           rm -f artifact_info.json run_info.json xcframework-build.zip
 
       - name: Push artifacts to master
@@ -64,27 +65,27 @@ jobs:
           PAT: ${{ secrets.PAT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Push Git Tag
+      - name: Push Git Tag and create release
         run: |
           # Push a Git tag with the new version
           export current_version=$(grep 'spec.version' LikeMindsFeed.podspec | awk -F '"' '/spec.version/{print $2}' | tr -d '\n' | sed 's/[^0-9.]//g; s/\..$//')
           
           # Check if the tag already exists
           if git rev-parse "v$current_version" >/dev/null 2>&1; then
-            echo "Tag v$current_version already exists. Skipping tag creation."
+            echo "Tag v$current_version already exists. Skipping tag and release creation."
           else
             git tag -a "v$current_version" -m "Version $current_version"
             git push origin "v$current_version"
+            
+            # Create github release
+            gh release create "$(git describe --tags --abbrev=0)" --generate-notes
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create Release
-        run: gh release create "$(git describe --tags --abbrev=0)" --generate-notes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Deploy to cocoapods
-        run: pod trunk push LikeMindsFeed.podspec --verbose
+        run: |
+          sleep 10
+          pod trunk push LikeMindsFeed.podspec --verbose
         env:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
