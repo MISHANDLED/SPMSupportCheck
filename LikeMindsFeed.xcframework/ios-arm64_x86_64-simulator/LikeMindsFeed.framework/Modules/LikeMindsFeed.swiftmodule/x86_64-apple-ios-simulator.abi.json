@@ -22007,9 +22007,97 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "topics",
+            "printedName": "topics",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TopicResponse",
+                        "printedName": "LikeMindsFeed.TopicFeedResponse.TopicResponse",
+                        "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed16EditPostResponseV6topicsSDySSAA05TopiccF0V0hF0VGSgvp",
+            "mangledName": "$s13LikeMindsFeed16EditPostResponseV6topicsSDySSAA05TopiccF0V0hF0VGSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TopicResponse",
+                            "printedName": "LikeMindsFeed.TopicFeedResponse.TopicResponse",
+                            "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed16EditPostResponseV6topicsSDySSAA05TopiccF0V0hF0VGSgvg",
+                "mangledName": "$s13LikeMindsFeed16EditPostResponseV6topicsSDySSAA05TopiccF0V0hF0VGSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(post:users:widgets:)",
+            "printedName": "init(post:users:widgets:topics:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -22086,11 +22174,39 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TopicResponse",
+                        "printedName": "LikeMindsFeed.TopicFeedResponse.TopicResponse",
+                        "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13LikeMindsFeed16EditPostResponseV4post5users7widgetsAcA0E0VSg_SDySSAA4UserVGSgSDySSAA6WidgetVGSgtcfc",
-            "mangledName": "$s13LikeMindsFeed16EditPostResponseV4post5users7widgetsAcA0E0VSg_SDySSAA4UserVGSgSDySSAA6WidgetVGSgtcfc",
+            "usr": "s:13LikeMindsFeed16EditPostResponseV4post5users7widgets6topicsAcA0E0VSg_SDySSAA4UserVGSgSDySSAA6WidgetVGSgSDySSAA05TopiccF0V0mF0VGSgtcfc",
+            "mangledName": "$s13LikeMindsFeed16EditPostResponseV4post5users7widgets6topicsAcA0E0VSg_SDySSAA4UserVGSgSDySSAA6WidgetVGSgSDySSAA05TopiccF0V0mF0VGSgtcfc",
             "moduleName": "LikeMindsFeed",
             "implicit": true,
             "init_kind": "Designated"
@@ -97047,7 +97163,7 @@
       "kind": "StringLiteral",
       "offset": 337,
       "length": 3,
-      "value": "\"8\""
+      "value": "\"9\""
     },
     {
       "filePath": "\/Users\/runner\/work\/LikeMinds-iOS-Feed-SDK\/LikeMinds-iOS-Feed-SDK\/LikeMindsFeed\/Model\/UniversalFeed\/Request\/GetFeedRequest.swift",

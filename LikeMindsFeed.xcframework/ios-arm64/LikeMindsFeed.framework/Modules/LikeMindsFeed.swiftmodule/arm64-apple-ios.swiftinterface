@@ -171,6 +171,7 @@ public struct EditPostResponse : Swift.Decodable {
   public let post: LikeMindsFeed.Post?
   public let users: [Swift.String : LikeMindsFeed.User]?
   public let widgets: [Swift.String : LikeMindsFeed.Widget]?
+  public let topics: [Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]?
   public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class GetReportTagRequest : Swift.Encodable {
