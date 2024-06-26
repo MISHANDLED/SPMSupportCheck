@@ -6,51 +6,51 @@
 	<dict>
 		<key>Headers/LikeMindsFeed-Swift.h</key>
 		<data>
-		bsD1Rew3eumaDxCKSewOK/046SU=
+		mAzNoUjwS3q8JLXjxeFWm8GfIdo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8Cm99DvPFaOYdL6YpE+i0yVneNE=
+		kNGLCqipyPg348vXNhiEy5xvlbI=
 		</data>
 		<key>Modules/LikeMindsFeed.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		9kWPeDjSjSXXSjDdLM7er7AYA0c=
+		aFx85tkV3t6eCfIOO8ZikCApb6c=
 		</data>
 		<key>Modules/LikeMindsFeed.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		2VthKgEIhBAATqQvCbQfW1oDZ+E=
+		ojMzlp6nWmtjUK/GQjcLE9blMfA=
 		</data>
 		<key>Modules/LikeMindsFeed.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4EV5K9nsV3JeoZhf3Z3fGXt984E=
+		gPRrc3eIFZ03f3ompbHlbcuEY0s=
 		</data>
 		<key>Modules/LikeMindsFeed.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2VthKgEIhBAATqQvCbQfW1oDZ+E=
+		ojMzlp6nWmtjUK/GQjcLE9blMfA=
 		</data>
 		<key>Modules/LikeMindsFeed.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LJAO0uvkhkjFsXPgDe9DM4F0cVU=
+		Y5mG+SWXbynQnoVTqEUGaHXCYtE=
 		</data>
 		<key>Modules/LikeMindsFeed.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		9kWPeDjSjSXXSjDdLM7er7AYA0c=
+		aFx85tkV3t6eCfIOO8ZikCApb6c=
 		</data>
 		<key>Modules/LikeMindsFeed.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		A+oKo1wYwwqs2X73G9xTL7ksV5w=
+		TPBBAQdBeGMrGCTjI3t2l83wSkg=
 		</data>
 		<key>Modules/LikeMindsFeed.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		sMr0pNmyIJY5Dqlv/o2O3Se5758=
+		tEz1KjvTlVaXhYfCgPollhw0f8k=
 		</data>
 		<key>Modules/LikeMindsFeed.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		A+oKo1wYwwqs2X73G9xTL7ksV5w=
+		TPBBAQdBeGMrGCTjI3t2l83wSkg=
 		</data>
 		<key>Modules/LikeMindsFeed.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0/wpeu2OalMkpw/cHlXTEs85E8Y=
+		wSs5CEIVj7DNrrgy77duyvskND4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,77 +63,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y2J3CeLFnjyY0fLKkyQgVq8k5OVWUQYfvO2/HppsOPM=
+			zNpzuyH5iDh0KD5BdIGZPgYZ/eiZgeSwsiAYHZBKnzI=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsFeed.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ieawOjWsSEnew/kJQktecJzx8OJTRYzzY1UaM3hDKRU=
+			3uhXFQAPtMvj1mHCGrTFViMF1K7kjYtH491NTpVjpgs=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsFeed.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cQEuFtQSixusn9hC6iPWf/LN6XAECPvYliLnzAFZZEU=
+			OjPdufcZbhGdMCgLq4Jbf0Qsza0Qfo2KdgSUqffRLT8=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsFeed.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vHetyYgIhtkjbZKM2zTZMejaJpHTyAvzmcoi2+/KAkM=
+			Y+pbyCM54TwiqFee5lIPTD8p/UBJ6Oe4RHqE+2JyEb0=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsFeed.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cQEuFtQSixusn9hC6iPWf/LN6XAECPvYliLnzAFZZEU=
+			OjPdufcZbhGdMCgLq4Jbf0Qsza0Qfo2KdgSUqffRLT8=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsFeed.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vGApXCgRfy6F/fVqUfAjfKbplL2X5JKZ8t0AlcQN1JA=
+			jIjFbTnJO4C9eco70vgeDh2tbTpAstrh5wZcahgHplY=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsFeed.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ieawOjWsSEnew/kJQktecJzx8OJTRYzzY1UaM3hDKRU=
+			3uhXFQAPtMvj1mHCGrTFViMF1K7kjYtH491NTpVjpgs=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsFeed.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LDw4vtqN6fjClfBltv2ihR9LW7dFr/CLY+e2Q+gigEo=
+			GOOJVk5Wsodht8YhRB3XXDGNE+JFWiwwOznHz+fCpaA=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsFeed.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c8zuFtOORfG57lrmr9vUvuH8p+iBIGLjF7kpuK/c37o=
+			vPjOsvsRRAwxy/1GKwM8ws/5Dqj55j9tY5uDBbO1B90=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsFeed.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LDw4vtqN6fjClfBltv2ihR9LW7dFr/CLY+e2Q+gigEo=
+			GOOJVk5Wsodht8YhRB3XXDGNE+JFWiwwOznHz+fCpaA=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsFeed.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sF5YJtu0TuRi99uDbMbremYJrcPRvcUtz9G2HvZ0fHQ=
+			waAKMr47Mk1oQvUqom31FogFfD0bCekyQZVpYCsgLT4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
