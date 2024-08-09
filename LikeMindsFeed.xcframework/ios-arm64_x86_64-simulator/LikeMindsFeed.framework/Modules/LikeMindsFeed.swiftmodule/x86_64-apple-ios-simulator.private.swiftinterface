@@ -379,6 +379,7 @@ public struct GetFeedResponse : Swift.Decodable {
   public let users: [Swift.String : LikeMindsFeed.User]?
   public let topics: [Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]?
   public let widgets: [Swift.String : LikeMindsFeed.Widget]?
+  public let filteredComments: [Swift.String : LikeMindsFeed.Comment]?
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct GetFeedRoomRequest : Swift.Encodable {
@@ -838,6 +839,7 @@ public struct Post : Swift.Decodable {
   public let replies: [LikeMindsFeed.Comment]?
   public let topics: [Swift.String]?
   public let tempId: Swift.String?
+  public let filteredComments: [Swift.String]?
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct Widget : Swift.Decodable {
@@ -1016,6 +1018,19 @@ public struct Answer : Swift.Codable {
   public let answer: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+@propertyWrapper public struct UserDefaultsBacked<Value> where Value : Swift.Decodable, Value : Swift.Encodable {
+  public var wrappedValue: Value? {
+    get
+    set
+  }
+}
+public struct UserDetails {
+  @LikeMindsFeed.UserDefaultsBacked public static var userDetails: LikeMindsFeed.User? {
+    get
+    set
+    _modify
+  }
 }
 @_hasMissingDesignatedInitializers public class ValidateUserRequest {
   public static func builder() -> LikeMindsFeed.ValidateUserRequest
