@@ -73,7 +73,7 @@ public class Attachment : Swift.Codable {
 public class AttachmentMeta : Swift.Codable {
   public var attachmentUrl: Swift.String?
   public var format: Swift.String?, name: Swift.String?
-  public var pageCount: Swift.Int?, duration: Swift.Int?, size: Swift.Int?
+  public var width: Swift.Int?, height: Swift.Int?, pageCount: Swift.Int?, duration: Swift.Int?, size: Swift.Int?
   public var ogTags: LikeMindsFeed.OGTags?
   public var coverImageUrl: Swift.String? {
     get
@@ -114,6 +114,8 @@ public class AttachmentMeta : Swift.Codable {
   public init()
   required public init(from decoder: any Swift.Decoder) throws
   public func attachmentUrl(_ attachmentUrl: Swift.String) -> LikeMindsFeed.AttachmentMeta
+  public func height(_ height: Swift.Int) -> LikeMindsFeed.AttachmentMeta
+  public func width(_ width: Swift.Int) -> LikeMindsFeed.AttachmentMeta
   public func pageCount(_ pageCount: Swift.Int) -> LikeMindsFeed.AttachmentMeta
   public func format(_ format: Swift.String) -> LikeMindsFeed.AttachmentMeta
   public func name(_ name: Swift.String) -> LikeMindsFeed.AttachmentMeta
