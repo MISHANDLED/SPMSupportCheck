@@ -18,6 +18,14 @@ let package = Package(
         .binaryTarget(
             name: "LikeMindsFeed",
             path: "LikeMindsFeed.xcframework"
+        ),
+        .target(
+            name: "LikeMindsFeedWrapper",
+            dependencies: [
+                .target(name: "LikeMindsFeed"),
+                .product(name: "Alamofire", package: "Alamofire")
+            ],
+            path: "Sources"
         )
     ]
 )
