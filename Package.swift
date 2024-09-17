@@ -25,10 +25,7 @@ let package = Package(
                 "LikeMindsFeed",
                 .product(name: "Alamofire", package: "Alamofire")
             ],
-            path: "Sources",
-            linkerSettings: [
-                .linkedFramework("Alamofire")
-            ]
+            path: "Sources"
         )
     ]
 )
