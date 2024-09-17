@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "LikeMindsFeed",
-            targets: ["LikeMindsFeedWrapper"])
+            targets: ["LikeMindsFeedWrapper", "LikeMindsFeed"])
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.7.1")
