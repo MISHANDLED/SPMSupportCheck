@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.6
 import PackageDescription
 
 let package = Package(
@@ -22,10 +22,13 @@ let package = Package(
         .target(
             name: "LikeMindsFeedWrapper",
             dependencies: [
-                .target(name: "LikeMindsFeed"),
+                "LikeMindsFeed",
                 .product(name: "Alamofire", package: "Alamofire")
             ],
-            path: "Sources"
+            path: "Sources",
+            linkerSettings: [
+                .linkedFramework("Alamofire")
+            ]
         )
     ]
 )
